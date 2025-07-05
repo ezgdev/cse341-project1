@@ -1,0 +1,13 @@
+// LOCALHOST
+### Get All Contacts
+GET http://localhost:3000/contacts
+
+### Get Contact by ID
+GET http://localhost:3000/contacts/68687156958566019443d2f6
+
+// PRODUCTION
+### Get All Contacts
+GET https://cse341-project1-qjdy.onrender.com/contacts
+
+### Get Contact by ID
+GET https://cse341-project1-qjdy.onrender.com/contacts/68687156958566019443d2f6
