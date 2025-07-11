@@ -52,19 +52,19 @@
               "type": "object",
               "properties": {
                 "firstName": {
-                  "example": "any"
+                  "example": "test"
                 },
                 "lastName": {
-                  "example": "any"
+                  "example": "test"
                 },
                 "email": {
-                  "example": "any"
+                  "example": "test@gmail.com"
                 },
                 "favoriteColor": {
-                  "example": "any"
+                  "example": "blue"
                 },
                 "birthday": {
-                  "example": "any"
+                  "example": "1990-01-01"
                 }
               }
             }
@@ -122,19 +122,19 @@
               "type": "object",
               "properties": {
                 "firstName": {
-                  "example": "any"
+                  "example": "test3"
                 },
                 "lastName": {
-                  "example": "any"
+                  "example": "test3"
                 },
                 "email": {
-                  "example": "any"
+                  "example": "test3@gmail.com"
                 },
                 "favoriteColor": {
-                  "example": "any"
+                  "example": "green"
                 },
                 "birthday": {
-                  "example": "any"
+                  "example": "1990-01-02"
                 }
               }
             }
