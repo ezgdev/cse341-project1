@@ -5,10 +5,10 @@
     "description": "API for managing contacts",
     "version": "1.0.0"
   },
-  "host": "cse341-project1-qjdy.onrender.com",
+  "host": "localhost:3000",
   "basePath": "/",
   "schemes": [
-    "https"
+    "http"
   ],
   "paths": {
     "/": {
@@ -48,23 +48,30 @@
           {
             "name": "body",
             "in": "body",
+            "required": true,
             "schema": {
               "type": "object",
+              "required": [
+                "firstName",
+                "lastName",
+                "email",
+                "favoriteColor"
+              ],
               "properties": {
                 "firstName": {
-                  "example": "test"
+                  "example": "any"
                 },
                 "lastName": {
-                  "example": "test"
+                  "example": "any"
                 },
                 "email": {
-                  "example": "test@gmail.com"
+                  "example": "any"
                 },
                 "favoriteColor": {
-                  "example": "blue"
+                  "example": "any"
                 },
                 "birthday": {
-                  "example": "1990-01-01"
+                  "example": "any"
                 }
               }
             }
@@ -73,6 +80,9 @@
         "responses": {
           "201": {
             "description": "Created"
+          },
+          "412": {
+            "description": "Precondition Failed"
           },
           "500": {
             "description": "Internal Server Error"
@@ -118,23 +128,30 @@
           {
             "name": "body",
             "in": "body",
+            "required": true,
             "schema": {
               "type": "object",
+              "required": [
+                "firstName",
+                "lastName",
+                "email",
+                "favoriteColor"
+              ],
               "properties": {
                 "firstName": {
-                  "example": "test3"
+                  "example": "any"
                 },
                 "lastName": {
-                  "example": "test3"
+                  "example": "any"
                 },
                 "email": {
-                  "example": "test3@gmail.com"
+                  "example": "any"
                 },
                 "favoriteColor": {
-                  "example": "green"
+                  "example": "any"
                 },
                 "birthday": {
-                  "example": "1990-01-02"
+                  "example": "any"
                 }
               }
             }
@@ -146,6 +163,9 @@
           },
           "404": {
             "description": "Not Found"
+          },
+          "412": {
+            "description": "Precondition Failed"
           }
         }
       },
